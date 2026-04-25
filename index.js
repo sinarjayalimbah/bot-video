@@ -25,6 +25,9 @@ const GROUP_ID = -1003521400775;
 // LINK INVITE GRUP
 const GROUP_INVITE_LINK = "https://t.me/+WFBU_2WGIURmY2Nl";
 
+// LINK PROMO CH WAJIB JOIN
+const RATE_PAP_LINK = "https://t.me/Ratepapcewek_SDCT";
+
 // ==========================
 // STATE — menyimpan video sementara
 // ==========================
@@ -320,25 +323,19 @@ bot.onText(/\/start (.+)/, async (msg, match) => {
       "🚫 Kamu harus join channel & grup kami dulu untuk melihat konten!",
       {
         reply_markup: {
-          inline_keyboard: [
-            [
-              {
-                text: "Join Channel",
-                url: `https://t.me/${CHANNEL_USERNAME.replace("@", "")}`
-              }
-            ],
-            [
-              {
-                text: "Join Grup",
-                url: GROUP_INVITE_LINK
-              }
-            ],
-            [
-              {
-                text: "✅ Saya sudah join",
-                callback_data: `ck_${kode}`
-              }
-            ]
+          inline_keyboard: [ 
+           [ 
+            { text: "Join Channel", url: `https://t.me/${CHANNEL_USERNAME.replace("@", "")}` } 
+           ], 
+           [ 
+            { text: "Join Grup", url: GROUP_INVITE_LINK } 
+           ],
+           [
+            { text: "Join Channel", url: "https://t.me/Ratepapcewek_SDCT" }
+           ],
+           [ 
+            { text: "✅ Saya sudah join", callback_data: `ck_${kode}` } 
+           ] 
           ]
         }
       });
@@ -437,14 +434,17 @@ Upload video → ketik judul → link langsung muncul
       "✅ Kamu sudah join! Klik link video dari channel kami untuk menonton konten.",
       {
         reply_markup: {
-          inline_keyboard: [
-            [
-              {
-                text: "Ke Channel",
-                url: `https://t.me/${CHANNEL_USERNAME.replace("@", "")}`
-              }
-            ]
-          ]
+        inline_keyboard: [ 
+         [ 
+          { text: "Join Channel", url: `https://t.me/${CHANNEL_USERNAME.replace("@", "")}` } 
+         ], 
+         [ 
+          { text: "Join Grup", url: GROUP_INVITE_LINK } 
+         ],
+         [
+          { text: "Join Channel", url: "https://t.me/Ratepapcewek_SDCT" }
+         ]
+         ]
         }
       }
     );
